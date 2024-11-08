@@ -1,36 +1,64 @@
-# Task API Documentation
+## API Endpoints
 
-This API provides endpoints for user registration, login, and managing products (create, retrieve, update, delete).
+### User Routes
 
-## Table of Contents
+- **User Registration**
 
-- [Getting Started](#getting-started)
-- [Endpoints](#http://localhost:5000/api/v1)
-  - [User Routes](#users)
-    - [Register User](#register)
-  - [User Routes](#auth)
-    - [Register User](#login)
-  - [Product Routes](#product)
-    - [Create Product](#create)
-    - [Get All Products](#)
-    - [Get Single Product](#id)
-    - [Update Product by ID](#id)
-    - [Delete Product by ID](#id)
+  - **Method**: `POST`
+  - **Endpoint**: `/users/register`
+  - **Description**: Register a new user.
+
+- **User Login**
+  - **Method**: `POST`
+  - **Endpoint**: `/auth/login`
+  - **Description**: Login for existing users to obtain an authentication token.
+
+### Product Routes
+
+- **Create Product**
+
+  - **Method**: `POST`
+  - **Endpoint**: `/product/create`
+  - **Description**: Adds a new product to the inventory.
+
+- **Get All Products**
+
+  - **Method**: `GET`
+  - **Endpoint**: `/product`
+  - **Description**: Retrieves all products.
+
+- **Get Single Product**
+
+  - **Method**: `GET`
+  - **Endpoint**: `/product/:id`
+  - **Description**: Retrieves details of a specific product by its ID.
+
+- **Update Product by ID**
+
+  - **Method**: `PUT`
+  - **Endpoint**: `/product/:id`
+  - **Description**: Updates a product's information by its ID.
+
+- **Delete Product by ID**
+  - **Method**: `DELETE`
+  - **Endpoint**: `/product/:id`
+  - **Description**: Deletes a product by its ID.
 
 ## Getting Started
 
 ### Prerequisites
 
-- Node.js
-- npm (Node Package Manager)
-- Prisma ORM
-- PostgreSQL
+Ensure you have the following installed:
+
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/)
+- [Prisma ORM](https://www.prisma.io/)
+- [PostgreSQL](https://www.postgresql.org/)
 
 ### Installation
 
-1. Clone the repository:
+1. **Clone the repository**:
    ```bash
-   git clone <https://github.com/ruhulamin-et15/task-backend-using-node-prisma-postgresql>
-   cd <task>
+   git clone https://github.com/ruhulamin-et15/task-backend-using-node-prisma-postgresql
+   cd task
    ```
-2. Live URL https://
